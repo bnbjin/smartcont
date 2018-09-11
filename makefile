@@ -4,7 +4,7 @@ EOSIOCPP=eosiocpp
 
 all : cont
 
-cont : cont.cpp
+cont : cont.hpp cont.cpp
 	$(EOSIOCPP) -o cont.wast cont.cpp
 	$(EOSIOCPP) -g cont.abi cont.cpp
 
